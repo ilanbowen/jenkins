@@ -1,4 +1,4 @@
-node('ops-school-dynamic-slave'){
+node('JenkinsSlave2'){
 	currentBuild.result = "SUCCESS"
 	stage('checkout'){
 		sh 'echo "checkout"'
