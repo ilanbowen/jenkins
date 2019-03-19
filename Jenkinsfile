@@ -4,10 +4,10 @@ node('JenkinsSlave2'){
 		sh 'echo "checkout"'
 	}
 	stage('unit test'){
-		sh 'python home-assignments/session2/exercise1.py --city dublin --forecast TODAY -c'
+		sh 'echo "unit test"'
 	}
 	stage('integration test'){
-		sh 'echo "integration test"'
+		sh 'python home-assignments/session2/exercise1.py --city dublin --forecast TODAY -c'
 	}
 	stage('deploy'){
 		sh 'echo "deploy"'
