@@ -4,7 +4,7 @@ node('JenkinsSlave2'){
 		sh 'echo "checkout"'
 	}
 	stage('unit test'){
-		sh 'echo "unit test"'
+		sh 'exit 1'
 	}
 	stage('integration test'){
 		sh 'echo "integration test"'
