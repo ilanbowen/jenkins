@@ -1,7 +1,6 @@
-node {
-   echo 'Hello World'
-   echo 'Line1'
-   echo 'Line2'
-   echo 'Line3'
-   echo 'Line4'
+node('JenkinsSlave2'){
+	currentBuild.result = "SUCCESS"
+	stage('Printing hello world'){
+		sh 'echo "Hello World"'
+	}
 }
