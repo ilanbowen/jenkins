@@ -4,7 +4,7 @@ node('JenkinsSlave2'){
 		sh 'echo "checkout"'
 	}
 	stage('unit test'){
-		sh 'exit 1'
+		sh 'python home-assignments/session2/exercise1.py --city dublin --forecast TODAY -c'
 	}
 	stage('integration test'){
 		sh 'echo "integration test"'
